@@ -1,0 +1,729 @@
+
+  /* Production Section Styles */
+.production-results {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Worker Section */
+.worker-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.worker-avatar-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #2196F3;
+}
+
+.worker-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.worker-details {
+  flex: 1;
+}
+
+.worker-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.worker-id,
+.worker-shift {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Metrics Section */
+.metrics-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metric {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metric-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.metric-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+/* Grid Layout */
+.operations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+
+.operation-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Left Section (Number + Name) */
+.operation-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.operation-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #001f54;
+}
+
+.operation-name {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Right Section (Values) */
+.operation-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 2;
+}
+
+/* Individual Data Rows */
+.operation-data {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0;
+}
+
+.data-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.separator {
+  color: #888;
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+/* Values with Colors */
+.data-value {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.quantity-ok {
+  color: #28a745; /* Green */
+}
+/* General Dashboard Styles */
+.dashboard {
+  background-color: #FEBD00;
+  padding-left: 10vh;
+  height: 100vh;
+  overflow-y: auto;
+  min-width: 110rem;
+margin-right: -15rem;
+margin-left: -1rem;
+margin-top:-5rem;
+
+}
+
+operations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible tabular structure */
+  gap: 2rem;
+  width: 100%;
+}
+
+
+.operation-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  width: 100%;
+}
+
+.operation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.operation-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+
+/* Operation Name */
+.operation-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+.operation-quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Quantity Styling */
+.quantity-ok {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.quantity-nc {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.quantity-tc {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Separator */
+.separator {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .operations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.quantity-nc {
+  color: #dc3545; /* Red */
+}
+
+.quantity-tc {
+  color: #007bff; /* Blue */
+}
+
+
+
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.metric-item {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.metric-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.metric-item label {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.metric-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+
+
+
+
+
+
+
+
+/* Operations Grid */
+.operations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.operation-item {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.operation-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.operation-header {
+  display: ruby;
+  gap:8rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.operation-id {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.operation-quantity {
+  text-align: right;
+  margin-right:5rem;
+}
+
+.operation-quantity .quantity-ok {
+  font-size: 14px;
+  color: #4CAF50;
+}
+
+.operation-quantity .quantity-nc {
+  font-size: 14px;
+  color: #F44336;
+}
+
+.operation-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .operations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  /* Header */
+  .dashboard-header {
+    background: white;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    margin-bottom: 16px;
+  }
+  
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .filter-select {
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    width: 160px;
+    font-size: 13px;
+    color: #1a202c;
+    background-color: white;
+    transition: border-color 0.2s;
+  }
+  
+  .filter-select:hover {
+    border-color: #cbd5e0;
+  }
+  
+  .filter-select:focus {
+    border-color: #4299e1;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+  }
+  
+  .timestamp {
+    margin-left: auto;
+    font-size: 13px;
+    color: #4a5568;
+  }
+  
+  /* Sections */
+  .section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    padding: 16px;
+    margin-top: 1rem;
+    margin-bottom: 16px;
+  }
+  
+  .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #edf2f7;
+  }
+  
+  /* Improved Gauge Styles */
+  .gauges-grid {
+    display: contents;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 8px 4px;
+  }
+  
+  .gauge-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.2s;
+    border: 1px solid #edf2f7;
+  }
+  .gauges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Add this to your CSS file */
+.add-of-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.add-of-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+    .trs-gauge {
+      width: 300000px; /* Adjust to your desired size */
+      height: 300px; /* Adjust to your desired size */
+      margin: 0 auto; 
+    
+  }
+  
+  .gauge-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .gauge {
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .gauge svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gauge svg path {
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+  }
+  
+  .gauge-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-top: 18px;
+  }
+  
+  .gauge-label {
+    font-size: 10px;
+    color: #718096;
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Production Card */
+  .production-card {
+    padding: 16px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+  
+  .worker-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #edf2f7;
+  }
+  
+  .worker-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #e2e8f0;
+  }
+  
+  .worker-details {
+    flex: 1;
+  }
+  
+  .worker-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 4px;
+  }
+  
+  .worker-shift {
+    font-size: 13px;
+    color: #718096;
+  }
+  
+  /* Metrics Grid */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 16px 0;
+  }
+  
+  .metric-item {
+    background: #f8fafc;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .metric-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .metric-item label {
+    font-size: 12px;
+    color: #718096;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .metric-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  /* Charts Grid */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 16px 0;
+  }
+  
+  .chart-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    min-height: 300px;
+  }
+  
+  .chart-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 16px;
+  }
+  
+  .chart-container {
+    height: calc(100% - 40px);
+  }
+  
+  /* Table Styles */
+  .table-container {
+    margin-top: 16px;
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+  }
+  
+  .production-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  
+  .production-table th {
+    background: #f8fafc;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 1px solid #edf2f7;
+    white-space: nowrap;
+  }
+  
+  .production-table td {
+    padding: 12px 16px;
+    color: #4a5568;
+    border-bottom: 1px solid #edf2f7;
+  }
+  
+  .production-table tr:hover td {
+    background: #f8fafc;
+  }
+  
+  /* Chart Customizations */
+  .recharts-wrapper {
+    font-size: 12px;
+  }
+  
+  .recharts-text {
+    fill: #4a5568;
+  }
+  
+  .recharts-cartesian-grid line {
+    stroke: #edf2f7;
+  }
+  
+  .recharts-tooltip-wrapper {
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 1280px) {
+    .charts-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .filter-select {
+      width: 100%;
+    }
+    
+    .timestamp {
+      margin: 8px 0;
+    }
+    
+    .metrics-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* Progress Bar Container */
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+/* Outer Grey Progress Bar */
+.progress-bar {
+  flex: 1;
+  height: 12px; /* Slightly larger for better visibility */
+  background: #e0e0e0; /* Light grey background */
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Blue Fill */
+.progress-fill {
+  height: 100%;
+  background: #007bff; /* Blue color */
+  transition: width 0.5s ease-in-out;
+}
